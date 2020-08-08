@@ -1,0 +1,64 @@
+<html>
+<head>
+
+<link rel="stylesheet" href="C:\Users\dell\Desktop\AMBER JAGGA-2\Learning Bootstrap-AMBER\bootstrap-4.5.0-dist\bootstrap-4.5.0-dist\css\bootstrap.min.css">
+<script>
+	function dis1(){
+		var a =document.getElementById("t1").value;
+		var b =document.getElementById("p").value;
+		var c =document.getElementById("ad").value;
+		var d =document.getElementById("o").value;
+		if(a==""){
+			open("C:/Python-Tanmay/Ch-03 Programs/sorry.html");
+		}else if(b==""){
+			open("C:/Python-Tanmay/Ch-03 Programs/sorry.html");
+		}else if(c==""){
+			open("C:/Python-Tanmay/Ch-03 Programs/sorry.html");
+		}else if(d==""){
+			open("C:/Python-Tanmay/Ch-03 Programs/sorry.html");
+		}else{
+			open("C:/Python-Tanmay/Ch-03 Programs/verification2.htm");
+		}
+	}
+
+	function dis2()
+{
+var a =document.getElementById("t1").value;
+var b =document.getElementById("p").value;
+var c =document.getElementById("ad").value;
+var d =document.getElementById("o").value;
+alert(a);
+alert(b);
+alert(c);
+alert(d);
+}
+</script>
+</head>
+<body>
+
+	<div class="container">
+		<h4 class="bg-warning text-info text-center">Create An Account</h4>
+
+<form id="myform">
+Username:<input id="t1" type="text" class="form-control">
+Password:<input  id="p" type="password" class="form-control">
+Address:<textarea id="ad" rows="3" class="form-control"></textarea>
+Select Your Language:
+<select class="form-control" id="o">
+<option value="Hindi">Hindi</option>
+<option value="English">English</option>
+<option value="French">French</option>
+<option value="Japeneese">Japeneese</option>
+<option value="German">German</option>
+<option value="Punjabi">Punjabi</option>
+</select><br>
+
+<button type="button" class="btn btn-Warning" onclick="dis1();">Login</button>
+<input type="reset" class="btn btn-success" value="Reset">
+<button type="button" class="btn btn-Warning" onclick="dis2();">Re check</button>
+
+</form>
+	</div>
+
+</body>
+</html>
